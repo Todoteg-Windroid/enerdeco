@@ -1,0 +1,330 @@
+/* Secciones principales */
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+    z-index: 2;
+    gap: 40px;
+    color: #fff;
+}
+
+.section {
+    flex: 1;
+    min-width: 500px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    position: relative;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 215, 0, 0.5);
+}
+
+.section-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    position: relative;
+}
+
+.mission-icon {
+    background: linear-gradient(45deg, #ff6b35, #f7931e);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate 8s infinite linear;
+}
+
+.vision-icon {
+    background: linear-gradient(45deg, #4285f4, #0f4c75);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: float-icon 4s infinite ease-in-out;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes float-icon {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.mission-title {
+    color: #ff6b35;
+}
+
+.vision-title {
+    color: #4285f4;
+}
+
+.section-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+/* Elementos de innovación */
+.innovation-elements {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.innovation-item {
+    background: rgba(255, 215, 0, 0.1);
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.innovation-item:hover {
+    background: rgba(255, 215, 0, 0.2);
+    transform: scale(1.05);
+}
+
+
+.section-valores {
+    font-family: 'Orbitron', monospace;
+    padding: 80px 20px;
+    padding-bottom: 200px;
+    padding-top: 0;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    background: #1a1a1a;
+    /* margin-bottom: -100px; */
+    position: relative;
+}
+
+.title {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.values-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.value-banner {
+    position: relative;
+    height: 180px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.8) 100%);
+    border: 2px solid transparent;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-clip: padding-box;
+}
+
+.value-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #ff6b35, #f7931e, #ffcc02, #ff6b35);
+    background: linear-gradient(45deg, #2D7A84, #55A7A3, #F9F8F5, #2D7A84);
+    z-index: -1;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.value-banner:hover::before {
+    opacity: 1;
+}
+
+.value-banner:hover {
+    transform: translateX(10px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
+    box-shadow: 0 10px 30px rgb(0 148 163);
+}
+
+.banner-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://wallpapers.com/images/hd/gas-and-oil-track-equipment-ud7e9z86pawgbfd3.jpg');
+    background-size: 100% 900px;
+    background-repeat: no-repeat;
+    filter: sepia(30%) saturate(180%) hue-rotate(20deg) brightness(0.8);
+    transition: all 0.3s ease;
+}
+
+.value-banner:nth-child(1) .banner-bg {
+    background-position: 0 0;
+}
+
+.value-banner:nth-child(2) .banner-bg {
+    background-position: 0 -180px;
+}
+
+.value-banner:nth-child(3) .banner-bg {
+    background-position: 0 -360px;
+}
+
+.value-banner:nth-child(4) .banner-bg {
+    background-position: 0 -540px;
+}
+
+.value-banner:nth-child(5) .banner-bg {
+    background-position: 0 -720px;
+}
+
+.value-banner:hover .banner-bg {
+    filter: sepia(50%) saturate(220%) hue-rotate(30deg) brightness(1);
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        rgba(0,0,0,0.85) 0%, 
+        rgba(0,0,0,0.6) 30%, 
+        rgba(0,0,0,0.3) 70%, 
+        rgba(0,0,0,0.75) 100%);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.value-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #ffcc02;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.value-banner:hover .value-title {
+    color: #fff;
+    transform: translateX(10px);
+}
+
+.value-description {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #e0e0e0;
+    max-width: 600px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    transition: all 0.3s ease;
+}
+
+.value-banner:hover .value-description {
+    color: #fff;
+    transform: translateX(15px);
+}
+
+.banner-number {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 4rem;
+    font-weight: 900;
+    color: rgba(255, 204, 2, 0.3);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    transition: all 0.3s ease;
+}
+
+.value-banner:hover .banner-number {
+    color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
+
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    
+    .value-banner {
+        height: 150px;
+    }
+    
+    .banner-content {
+        padding: 20px;
+    }
+    
+    .value-title {
+        font-size: 1.5rem;
+    }
+    
+    .value-description {
+        font-size: 0.9rem;
+    }
+    
+    .banner-number {
+        font-size: 3rem;
+        top: 15px;
+        right: 20px;
+    }
+}
+
+.scanlines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(255, 107, 53, 0.03) 2px,
+        rgba(255, 107, 53, 0.03) 4px
+    );
+    pointer-events: none;
+    z-index: 1000;
+}
