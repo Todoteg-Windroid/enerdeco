@@ -188,6 +188,7 @@ header label:hover{
         right: 0;
         top: 0;
         left: auto;
+        z-index: 0;
     }
     /* li a{
         display: block;
