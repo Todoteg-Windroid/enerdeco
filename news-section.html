@@ -260,8 +260,7 @@
     <script src="gotop.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="Menu Desplegable.js"></script>
+
     <script>
         function toggleSocialButtons() {
             const toggleButton = document.querySelector('.toggle-button');
@@ -281,9 +280,7 @@
                 }, 600);
             }
         }
-    </script>
 
-    <script>
         function formatDate(dateString) {
             const date = new Date(dateString);
             return date.toLocaleDateString('es-ES', {
@@ -315,7 +312,7 @@
                 <div class="card-body">
                     <h5 class="card-title">${truncateText(article.title, titleLength)}</h5>
                     ${showDescription ? `<p class="card-text">${truncateText(article.description || '', 150)}</p>` : ''}
-                    ${showButton ? `<a href="${article.url}" target="_blank" class="btn-read-more">Leer más</a>` : ''}
+                    ${showButton ? `<a href="#" target="_blank" class="btn-read-more">Leer más</a>` : ''}
                 </div>
                 <div class="card-footer">
                     <small>${formatDate(article.published_at)}</small>
