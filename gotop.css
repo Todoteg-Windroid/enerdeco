@@ -29,16 +29,16 @@
     color: #fff;
     transition: .2s;
 }
-.show{
+.go-top-container.show{
     z-index: 800;
 }
-.show .go-top-button{
+.go-top-container.show .go-top-button{
     animation: popup .3s ease-in-out;
     width: 66px;
     height: 66px;
     z-index: 801;
 }
-.show i{
+.go-top-container.show i{
     transform: translate(-50%, -50%) scale(1);
 }
 @keyframes popup{

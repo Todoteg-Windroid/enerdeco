@@ -11,59 +11,6 @@
     clip-path: polygon(0 100px, 15% 80px, 35% 100px, 55% 60px, 75% 90px, 90% 70px, 100% 80px, 100% 100%, 0 100%);
 }
 
-.section-contacto::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23fff" stop-opacity="0.1"/><stop offset="100%" stop-color="%23fff" stop-opacity="0"/></radialGradient></defs><circle cx="100" cy="100" r="80" fill="url(%23a)"/><circle cx="900" cy="200" r="120" fill="url(%23a)"/><circle cx="200" cy="900" r="100" fill="url(%23a)"/><circle cx="800" cy="800" r="90" fill="url(%23a)"/></svg>') no-repeat;
-    background-size: cover;
-    opacity: 0.3;
-    pointer-events: none;
-}
-
-/* .contacto {
-    text-align: center;
-    margin-bottom: 60px;
-    position: relative;
-    z-index: 1;
-}
-
-.contacto h3 {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 48px;
-    font-weight: 500;
-    color: white;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    position: relative;
-}
-
-.contacto h3::after {
-    content: '';
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 4px;
-    background: linear-gradient(90deg, #ffd700, #ffed4e);
-    border-radius: 2px;
-}
-
-.contacto p {
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    color: rgba(255,255,255,0.9);
-    line-height: 1.6;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 0 20px;
-} */
-
 /* Contenedor del formulario */
 .form-wrap {
     max-width: 1100px;
