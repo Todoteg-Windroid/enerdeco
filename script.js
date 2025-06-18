@@ -73,7 +73,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 /* fetch('https://cors-anywhere.herokuapp.com/https://api.apitube.io/v1/news/everything?language.code=es&topic.id=industry.commodities.upstream_oil_and_gas&per_page=10'
 , {
-    headers: { 'X-API-Key': 'api_live_lw0pZ2kUvlX0lnGZ6V7CEdszhz2zbzPryUJHODnBJDj', 'Accept': 'application/json' }
+    headers: { 'X-API-Key': 'API_KEY', 'Accept': 'application/json' }
     })
     .then(res => res.json())
     .then(data => {
